@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Kesatuan Bangsa : The Unspoken Truth
+= Demokrasi Liberal: An Alternate History
 
 @start_menu_2
 
@@ -21,8 +21,8 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 2023;
-Q.month = 2;
+Q.year = 1952;
+Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
@@ -262,9 +262,9 @@ Q.old_dnvp_r = 20;
 Q.old_nsdap_r = 3;
 Q.old_other_r = 9;
 
-// sapd isn't formed yet, but it may be formed
-Q.sapd_r = 0;
-Q.old_sapd_r = 0;
+// nu isn't formed yet, but it may be formed
+Q.nu_r = 0;
+Q.old_nu_r = 0;
 
 // for changing the DDP's name to the DStP
 Q.ddp_name = "DDP";
@@ -278,17 +278,16 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
-Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
+Q.president = "Soekarno";
+Q.chancellor = "Soekiman Wirjosandjojo";
+Q.chancellor_party = 'Masyumi';
+Q.pni_in_government = 1;
+Q.masyumi_in_government = 1;
+Q.demokrat_in_government = 1;
+Q.psii_in_government = 1;
+Q.kristen_in_government = 1;
+Q.katolik_in_government = 1;
+Q.pki_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
@@ -322,22 +321,22 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'DVP';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
+Q.foreign_minister = 'Achmad Soebardjo';
+Q.foreign_minister_party = 'Masyumi';
+Q.interior_minister = 'Iskak Tjokroadisurjo';
+Q.interior_minister_party = 'I';
+Q.justice_minister = 'Mohammad Nasrun';
+Q.justice_minister_party = 'I';
 Q.labor_minister = 'Brauns';
 Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'Groener';
+Q.reichswehr_minister = 'R. Mas Sewaka';
 Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+Q.religious_minister = 'Wahid Hasjim';
+Q.religious_minister_party = 'Masyumi';
+Q.finance_minister = 'Jusuf Wibisono';
+Q.finance_minister_party = 'Masyumi';
+Q.agriculture_minister = 'Suwarto';
+Q.agriculture_minister_party = 'Katolik';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
@@ -534,20 +533,20 @@ This is a game of alternate history. While historical accuracy is a major concer
 
 For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
-- @1928_easy: Begin (easy difficulty)
-- @1928_main: Begin (normal difficulty)
-- @1928_hard: Begin (hard difficulty)
-- @1928_historical: Begin (historical mode)
+- @1952_easy: Begin (easy difficulty)
+- @1952_main: Begin (normal difficulty)
+- @1952_hard: Begin (hard difficulty)
+- @1952_historical: Begin (historical mode)
 
-@1928_easy
+@1952_easy
 on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
 go-to: 1928_main
 
-@1928_hard
+@1952_hard
 on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31; budget = 3;
 go-to: 1928_main
 
-@1928_historical
+@1952_historical
 subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
 on-arrival: {!
 Q.difficulty = 2;
@@ -572,7 +571,7 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= 1952
 
 It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
