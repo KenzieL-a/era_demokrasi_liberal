@@ -22,7 +22,7 @@ Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
 Q.year = 1952;
-Q.month = 1;
+Q.month = 0;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
@@ -89,19 +89,19 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.masyumi_relation = 50;
-Q.demokrat_relation = 25;
-Q.psii_relation = 60;
-Q.kristen_relation = 35;
-Q.katolik_relation = 10;
-Q.kristen_relation = 0;
+Q.masyumi_relation = 40;
+Q.demokrat_relation = 65;
+Q.psii_relation = 50;
+Q.kristen_relation = 70;
+Q.katolik_relation = 70;
+Q.pki_relation = 70;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
 Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.masyumi_leader = "Soekiman";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
+Q.masyumi_party_leader = "Soekiman";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -115,7 +115,7 @@ Q.hindenburg_enabled = 0;
 // popular opinion
 // national ideology - on a binary scale
 // nationalism vs internationalism or pacifism or non-nationalism
-Q.nationalism = 60;
+Q.nationalism = 80;
 // socialism vs capitalism
 Q.socialism = 40;
 // pro-republic vs anti-republic
@@ -449,7 +449,7 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
+Q.next_election_year = 1952;
 Q.next_election_month = 5;
 Q.next_election_time = 5;
 // government affairs timers
@@ -530,7 +530,7 @@ new-page: true
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+For more information on the politics and government of the Liberal Democratic Era, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @1952_easy: Begin (easy difficulty)
 - @1952_main: Begin (normal difficulty)
