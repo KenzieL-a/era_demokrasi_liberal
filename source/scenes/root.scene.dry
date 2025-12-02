@@ -176,64 +176,55 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['7', '8A', '8B', '8C', '8D', '9', 'Teachers'];
+Q.classes = ['rural', 'workers', 'santri', 'middle', 'christians'];
 Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 60;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 5;
-Q.workers_nsdap = 0;
+Q.workers_pni = 50;
+Q.workers_pki = 50;
+Q.workers_masyumi = 5;
+Q.workers_psii = 0;
+Q.workers_demokrat = 0;
+Q.workers_kristen = 0;
+Q.workers_katolik = 0;
 Q.workers_other = 10;
 
-Q.old_middle_spd = 5;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp= 10;
-Q.old_middle_dvp = 25;
-Q.old_middle_dnvp = 25;
-Q.old_middle_nsdap = 10;
-Q.old_middle_other = 10;
+Q.santri_pni = 15;
+Q.santri_pki = 10;
+Q.santri_masyumi = 50;
+Q.santri_psii = 30;
+Q.santri_demokrat = 0;
+Q.santri_kristen = 0;
+Q.santri_katolik = 0;
+Q.santri_other = 10;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 1;
-Q.new_middle_z = 10;
-Q.new_middle_ddp= 25;
-Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.middle_pni = 40;
+Q.middle_pki = 10;
+Q.middle_masyumi = 10;
+Q.middle_psii = 0;
+Q.middle_demokrat = 25;
+Q.middle_kristen = 10;
+Q.middle_katolik = 5;
+Q.middle_other = 15;
 
-Q.rural_spd = 10;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_pni = 10;
+Q.rural_pki = 30;
+Q.rural_masyumi = 40;
+Q.rural_psii = 5;
+Q.rural_demokrat = 15;
+Q.rural_kristen = 5;
+Q.rural_katolik = 5;
+Q.rural_other = 15;
 
-Q.unemployed_spd = 25;
-Q.unemployed_kpd = 55;
-Q.unemployed_z = 1;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 15;
-Q.unemployed_other = 9;
-
-Q.catholics_spd = 15;
-Q.catholics_kpd = 2;
-Q.catholics_z = 50;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 0;
-Q.catholics_other = 12;
+Q.christians_pni = 10;
+Q.christians_pki = 10;
+Q.christians_masyumi = 0;
+Q.christians_psii = 0;
+Q.christians_demokrat = 15;
+Q.christians_kristen = 50;
+Q.christians_katolik = 40;
+Q.rural_other = 15;
 
 
 // Current Reichstag composition
@@ -574,6 +565,6 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 It is a bright time for the Indonesian nation. After a period of struggle, the United States of Indonesia has been dissolved and we have finally secured our sovereignty. Currently, our situation is dire. Hyperinflation and economic deficit is plaguing our economy and our nascent democracy is highly unstable. 
 
-Now, our task is to form a Konstituante to draft a new constitution for the young Indonesian nation. The Masyumi-dominated cabinet of Soekiman is unpopular, and we stand to gain. Perhaps the next cabinet can brought over stability for our nation.
+Now, our task is to form a Konstituante to draft a new constitution for the young Indonesian nation. The <span style="color: #006600;">Masyumi</span>-led cabinet of Soekiman is unpopular, and we stand to gain. Perhaps the next cabinet can brought over stability for our nation.
 
 
