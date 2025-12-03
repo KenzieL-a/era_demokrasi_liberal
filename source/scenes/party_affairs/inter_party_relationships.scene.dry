@@ -10,10 +10,10 @@ max-visits: 12
 
 = Inter-Party Relationships
 
-The PNI cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+The PNI cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of a Grand Coalition of the PNI, Masyumi, and other democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
-- @nasrani: Strengthen our bonds with the <span style="color: #000000;">**Christian**</span> parties.
-- @islam: Strengthen our bonds with the <span style="color: #006600;">**Islamic**</span> parties.
+- @nasrani: Work together with the <span style="color: #66B2FF;">**Christian**</span> parties.
+- @islam: Warm our relations with the <span style="color: #000000;">**Islamic**</span> parties.
 - @pki: Strengthen our bonds with the <span style="color: #c00000;">**Communists**</span> Party.
 - @pni_alone: The PNI can stand alone for now.
 - @easy_discard
@@ -25,7 +25,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; pki_inter_party_seen += 1
 
-The <span style="color: #c00000;">**Communists**</span> have always been our close ally, but this could lead to the disenchantment of the Army.
+The <span style="color: #c00000;">**Communists**</span> have always been our close ally, but we never get the chance to be in government together with them. However this may change.
 
 @islam
 subtitle: -1 resources
@@ -33,7 +33,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; psii_relation += 2; masyumi_relation += 5*(1 - dissent)
 
-test
+Even though we have always been in government with them, our relations remain cold, especially of the <span style="color: #000000;">**Masyumi**</span>. However this may change.
 
 @nasrani
 subtitle: -1 resources
