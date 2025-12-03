@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1952;
+Q.year = 1951;
 Q.month = 0;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -90,7 +90,7 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.masyumi_relation = 40;
-Q.demokrat_relation = 65;
+Q.psi_relation = 65;
 Q.psii_relation = 50;
 Q.kristen_relation = 70;
 Q.katolik_relation = 70;
@@ -99,9 +99,9 @@ Q.pki_relation = 70;
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
 Q.kpd_party_leader = "Thälmann";
-Q.masyumi_leader = "Soekiman";
+Q.masyumi_leader = "Natsir";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.masyumi_party_leader = "Soekiman";
+Q.masyumi_party_leader = "Natsir";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -149,7 +149,7 @@ Q.workers = 48; // industry and trade
 Q.old_middle = 13; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
 Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.rural = 25; // education and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
 Q.unemployed = 8.6;
 Q.catholics = 30;
@@ -177,7 +177,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['rural', 'workers', 'santri', 'middle', 'christians'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['pni', 'pki', 'masyumi', 'psii', 'psi', 'kristen', 'katolik', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -185,7 +185,7 @@ Q.workers_pni = 50;
 Q.workers_pki = 50;
 Q.workers_masyumi = 5;
 Q.workers_psii = 0;
-Q.workers_demokrat = 0;
+Q.workers_psi = 15;
 Q.workers_kristen = 0;
 Q.workers_katolik = 0;
 Q.workers_other = 10;
@@ -194,7 +194,7 @@ Q.santri_pni = 15;
 Q.santri_pki = 10;
 Q.santri_masyumi = 50;
 Q.santri_psii = 30;
-Q.santri_demokrat = 0;
+Q.santri_psi = 0;
 Q.santri_kristen = 0;
 Q.santri_katolik = 0;
 Q.santri_other = 10;
@@ -203,7 +203,7 @@ Q.middle_pni = 40;
 Q.middle_pki = 10;
 Q.middle_masyumi = 10;
 Q.middle_psii = 0;
-Q.middle_demokrat = 25;
+Q.middle_psi = 0;
 Q.middle_kristen = 10;
 Q.middle_katolik = 5;
 Q.middle_other = 15;
@@ -212,7 +212,7 @@ Q.rural_pni = 10;
 Q.rural_pki = 30;
 Q.rural_masyumi = 40;
 Q.rural_psii = 5;
-Q.rural_demokrat = 15;
+Q.rural_psi = 5;
 Q.rural_kristen = 5;
 Q.rural_katolik = 5;
 Q.rural_other = 15;
@@ -221,7 +221,7 @@ Q.christians_pni = 10;
 Q.christians_pki = 10;
 Q.christians_masyumi = 0;
 Q.christians_psii = 0;
-Q.christians_demokrat = 15;
+Q.christians_psi = 5;
 Q.christians_kristen = 50;
 Q.christians_katolik = 40;
 Q.rural_other = 15;
@@ -273,7 +273,7 @@ Q.chancellor = "Soekiman Wirjosandjojo";
 Q.chancellor_party = 'Masyumi';
 Q.pni_in_government = 1;
 Q.masyumi_in_government = 1;
-Q.demokrat_in_government = 1;
+Q.psi_in_government = 1;
 Q.psii_in_government = 1;
 Q.kristen_in_government = 1;
 Q.katolik_in_government = 1;
@@ -311,22 +311,22 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Achmad Soebardjo';
+Q.foreign_minister = 'Mohammad Roem';
 Q.foreign_minister_party = 'Masyumi';
-Q.interior_minister = 'Iskak Tjokroadisurjo';
+Q.interior_minister = 'Assaat';
 Q.interior_minister_party = 'I';
-Q.justice_minister = 'Mohammad Nasrun';
-Q.justice_minister_party = 'I';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'R. Mas Sewaka';
-Q.reichswehr_minister_party = 'I';
+Q.justice_minister = 'Wongsonegoro';
+Q.justice_minister_party = 'PIR';
+Q.enlightened_minister = 'Melkias Agustinus Pellaupessy';
+Q.enlightened_minister_party = 'Demokrat';
+Q.reichswehr_minister = 'Mohammad Natsir';
+Q.reichswehr_minister_party = 'Masyumi';
 Q.religious_minister = 'Wahid Hasjim';
 Q.religious_minister_party = 'Masyumi';
-Q.finance_minister = 'Jusuf Wibisono';
+Q.finance_minister = 'Syafruddin Prawiranegara';
 Q.finance_minister_party = 'Masyumi';
-Q.agriculture_minister = 'Suwarto';
-Q.agriculture_minister_party = 'Katolik';
+Q.education_minister = 'Bahder Djohan';
+Q.education_minister_party = 'I';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
@@ -440,8 +440,8 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1952;
-Q.next_election_month = 5;
+Q.next_election_year = 1955;
+Q.next_election_month = 9;
 Q.next_election_time = 5;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
@@ -523,20 +523,20 @@ This is a game of alternate history. While historical accuracy is a major concer
 
 For more information on the politics and government of the Liberal Democratic Era, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
-- @1952_easy: Begin (easy difficulty)
-- @1952_main: Begin (normal difficulty)
-- @1952_hard: Begin (hard difficulty)
-- @1952_historical: Begin (historical mode)
+- @1951_easy: Begin (easy difficulty)
+- @1951_main: Begin (normal difficulty)
+- @1951_hard: Begin (hard difficulty)
+- @1951_historical: Begin (historical mode)
 
-@1952_easy
+@1951_easy
 on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
-go-to: 1952_main
+go-to: 1951_main
 
-@1952_hard
+@1951_hard
 on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31; budget = 3;
-go-to: 1952_main
+go-to: 1951_main
 
-@1952_historical
+@1951_historical
 subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
 on-arrival: {!
 Q.difficulty = 2;
@@ -554,14 +554,14 @@ Q.dvp_relation = 31;
 Q.budget = 2;
 this.state.disableSaves = true;
 !}
-go-to: 1952_main
+go-to: 1951_main
 
-@1952_main
+@1951_main
 audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1952
+= 1951
 
 It is a bright time for the Indonesian nation. After a period of struggle, the United States of Indonesia has been dissolved and we have finally secured our sovereignty. Currently, our situation is dire. Hyperinflation and economic deficit is plaguing our economy and our nascent democracy is highly unstable. 
 
