@@ -12,9 +12,9 @@ max-visits: 12
 
 The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet, because we do not have an electoral majority. Recently, our governments have consisted of a Grand Coalition of the <span style="color: #990000;">**PNI**</span>, <span style="color: #000000;">**Masyumi**</span>, and other democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
-- @nasrani: Work together with the <span style="color: #66B2FF;">Christian and Catholic</span> parties.
+- @nasrani: Work together with the <span style="color: #66B2FF;">Christian</span> and <span style="color: #660000;">Catholic</span>parties.
 - @islam: Warm our relations with the <span style="color: #000000;">Islamic</span> parties.
-- @socialist: Strengthen our bonds with the smaller <span style="color: #FF6666;">Socialist</span> parties.
+- @other: Strengthen our bonds with other smaller parties.
 - @pki: Work towards repairing relationships with the <span style="color: #c00000;">Communist</span> Party.
 - @pni_alone: The <span style="color: #990000;">PNI</span> can stand alone for now.
 - @easy_discard
@@ -28,13 +28,13 @@ on-arrival: resources -= 1; pki_inter_party_seen += 1
 
 The <span style="color: #c00000;">**Communists**</span> have always been our close ally, but we never get the chance to be in government together with them. However this may change.
 
-@socialist
+@other
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; psi_relation += 5*(1 - dissent)
+on-arrival: resources -= 1; psi_relation += 5*(1 - dissent); pir_relation += 5*(1 - dissent)
 
-Allying the <span style="color: #FF6666;">**PSI**</span> is crucial in securing allies in forming cabinets.
+Though electorally small, allying the smaller parties like the <span style="color: #FF6666;">**PSI**</span> or the <span style="color: #FF9933;">**PIR**</span> can be crucial in forming cabinet coalitions.
 
 
 @islam
@@ -51,7 +51,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; katolik_relation += 5*(1 - dissent); kristen_relation += 5*(1 - dissent); 
 
-They represent the religious minorities, especially of the east, this could help us reconcile with our eastern territories.
+Representing religious minorities, these parties can be reliable partners in regional matters.
 
 @pni_alone
 
