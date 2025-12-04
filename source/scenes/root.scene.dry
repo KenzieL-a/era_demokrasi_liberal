@@ -45,13 +45,21 @@ Q.dues = 2;
 Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
-
+// factions
+Q.factions = ['wilopo', 'sidik', 'partindo'];
+// should this be normalized to 100%?
+Q.wilopo_strength = 20;
+Q.wilopo_dissent = 10;
+Q.sidik_strength = 30;
+Q.sidik_dissent = 0;
+Q.partindo_strength = 25;
+Q.partindo_dissent = 5;
 
 // secret events...
 Q.unions_independent = 0;
 Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.wilopo_split = 0;
+Q.partindos_resigned = 0;
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
@@ -282,8 +290,8 @@ Q.in_weimar_coalition = 0;
 Q.in_grand_coalition = 0;
 // Popular front = pni + pki + masyumi + psi
 Q.in_popular_front = 0;
-// left coalition = pni + pki + left-splinters
-Q.in_left_front = 0;
+// wilopo coalition = pni + pki + wilopo-splinters
+Q.in_wilopo_front = 0;
 // emergency government containing the pni: only president Braun can do this.
 Q.in_emergency_government = 0;
 Q.in_pni_majority = 0;
@@ -294,7 +302,7 @@ Q.in_minority_government = 0;
 
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
-// dissent from the pki, in a popular front or left front government
+// dissent from the pki, in a popular front or wilopo front government
 Q.pki_coalition_dissent = 0;
 
 // does the pni tolerate the government even if it is not a participant?
@@ -356,7 +364,7 @@ Q.rearmament_exposed = 0;
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
 Q.reparations_negotiation = 0;
-// nationalimasyumiation_progress is part of the left economic plan.
+// nationalimasyumiation_progress is part of the wilopo economic plan.
 Q.nationalimasyumiation_progress = 0;
 // socialimasyumiations is part of the economic democracy card.
 Q.socialimasyumiations = 0;
@@ -473,7 +481,7 @@ Q.muller_dead = 0;
 Q.crispien_advisor = 1; // Arthur Crispien
 Q.hilferding_advisor = 0; // Rudolf Hilferding
 
-// left advisors
+// wilopo advisors
 Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
@@ -484,7 +492,7 @@ Q.seydewitmasyumi_advisor = 0; // Max Seydewitmasyumi
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
-// Reformist advisors
+// partindo advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacmasyumi_advisor = 0; // Marie Juchacmasyumi
@@ -516,7 +524,7 @@ new-page: true
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-For more information on the politics and government of the Liberal Democratic Era, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+For more information on the politics and government of the Liberal Democratic Era, see the "Library" page on the top wilopo. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @1951_easy: Begin (easy difficulty)
 - @1951_main: Begin (normal difficulty)
@@ -528,7 +536,7 @@ on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; budget
 go-to: 1951_main
 
 @1951_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; budget = 3;
+on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; partindo_dissent = 25; wilopo_dissent = 30; labor_dissent = 25; sidik_dissent = 25; budget = 3;
 go-to: 1951_main
 
 @1951_historical
@@ -539,10 +547,10 @@ Q.historical_mode = 1;
 Q.resources = 2;
 Q.dues = 1;
 Q.rb_strength = 2000;
-Q.reformist_dissent = 25;
-Q.left_dissent = 30;
+Q.partindo_dissent = 25;
+Q.wilopo_dissent = 30;
 Q.labor_dissent = 25;
-Q.center_dissent = 25;
+Q.sidik_dissent = 25;
 Q.masyumi_relation = 41;
 Q.pki_relation = 16
 Q.psii_relation = 31;
