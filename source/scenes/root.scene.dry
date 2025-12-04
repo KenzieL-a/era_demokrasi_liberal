@@ -97,12 +97,12 @@ Q.moderate_plan_adopted = 0;
 // organimasyumiations
 
 // inter-party relations
-Q.masyumi_relation = 40;
+Q.masyumi_relation = 30;
 Q.psi_relation = 60;
-Q.psii_relation = 45;
+Q.psii_relation = 42;
 Q.kristen_relation = 52;
 Q.katolik_relation = 52;
-Q.pki_relation = 42;
+Q.pki_relation = 25;
 
 Q.pki_leader = "Thälmann";
 // alternative is the Conciliators as party leader
