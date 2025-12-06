@@ -42,14 +42,14 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; 
-go-to: masyumi_op if not pni_in_government and masyumi_in_government; masyumi if pni_in_government and masyumi_in_government;
+go-to: masyumi_op if not pni_in_government and masyumi_in_government; masyumi_1 if pni_in_government and masyumi_in_government;
 
 @masyumi_op
 on-arrival: masyumi_relation += 5*(1 - dissent); psii_relation += 3*(1 - dissent); wilopo_strength += 3
 
 We are currently in opposition to the <span style="color: #000000;">**Masyumi**</span> and our relations remain cold. However this may change.
 
-@masyumi
+@masyumi_1
 on-arrival: masyumi_relation += 8*(1 - dissent); psii_relation += 5*(1 - dissent); wilopo_strength += 3
 
 We are currently coalition partners with them, so improving relations comes naturally.
