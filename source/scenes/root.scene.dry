@@ -98,9 +98,9 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.masyumi_relation = 30;
-Q.psi_relation = 60;
+Q.psi_relation = 53;
 Q.psii_relation = 42;
-Q.kristen_relation = 52;
+Q.kristen_relation = 60;
 Q.pki_relation = 30;
 
 
