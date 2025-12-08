@@ -104,9 +104,9 @@ Q.kristen_relation = 60;
 Q.pki_relation = 30;
 
 
-Q.pki_leader = "Thälmann";
+Q.pki_leader = "D.N. Aidit";
 // alternative is the Conciliators as party leader
-Q.pki_party_leader = "Thälmann";
+Q.pki_party_leader = "D.N. Aidit";
 Q.masyumi_leader = "Natsir";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the pni.
 Q.masyumi_party_leader = "Natsir";
