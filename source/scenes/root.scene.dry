@@ -106,12 +106,8 @@ Q.pki_relation = 30;
 
 
 Q.pki_leader = "D.N. Aidit";
-// alternative is the Conciliators as party leader
-Q.pki_party_leader = "D.N. Aidit";
-Q.masyumi_leader = "Natsir";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the pni.
-Q.masyumi_party_leader = "Natsir";
-Q.katolik_leader = "Hitler";
+Q.masyumi_leader = "Muhammad Natsir";
+Q.pni_leader = "Sidik Djojosukarto";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -209,34 +205,34 @@ Q.middle_pni = 35;
 Q.middle_pki = 0;
 Q.middle_masyumi = 10;
 Q.middle_psii = 0;
-Q.middle_psi = 10;
-Q.middle_kristen = 10;
-Q.middle_katolik = 5;
-Q.middle_other = 15;
+Q.middle_psi = 3;
+Q.middle_kristen = 0.75;
+Q.middle_katolik = 0.5;
+Q.middle_other = 20;
 
 Q.aristocrats_pni = 40;
 Q.aristocrats_pki = 0;
 Q.aristocrats_masyumi = 10;
 Q.aristocrats_psii = 3;
 Q.aristocrats_psi = 10;
-Q.aristocrats_kristen = 3;
-Q.aristocrats_katolik = 2;
+Q.aristocrats_kristen = 0.3;
+Q.aristocrats_katolik = 0.25;
 Q.aristocrats_other = 15;
 
-Q.rural_pni = 20;
+Q.rural_pni = 10;
 Q.rural_pki = 10;
 Q.rural_masyumi = 40;
 Q.rural_psii = 5;
-Q.rural_psi = 5;
-Q.rural_kristen = 5;
-Q.rural_katolik = 5;
+Q.rural_psi = 0.2;
+Q.rural_kristen = 1;
+Q.rural_katolik = 0.7;
 Q.rural_other = 15;
 
 Q.christians_pni = 10;
-Q.christians_pki = 10;
+Q.christians_pki = 5;
 Q.christians_masyumi = 0;
 Q.christians_psii = 0;
-Q.christians_psi = 5;
+Q.christians_psi = 3;
 Q.christians_kristen = 50;
 Q.christians_katolik = 40;
 Q.christians_other = 15;
