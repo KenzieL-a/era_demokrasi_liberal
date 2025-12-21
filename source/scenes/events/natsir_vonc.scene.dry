@@ -14,22 +14,4 @@ On March 22, the parliament was to discuss the Prime Minister's statement regard
 
 @good
 
-The President has appointed Sartono, a prominent <span style="color: #990000;">**PNI**</span> member and chairman of parliament, to form "a national coalition cabinet on a broad basis."
-
-- @sartono_succeed: Sartono manages to form a cabinet!
-- @sartono_fails: Sartono fails to form a cabinet in time!
-
-@sartono_succeed
-choose-if: masyumi_relations = 35
-on-arrival: resources -= 1
-unavailable-subtitle: The difficulties of forming a cabinet of two opposing parties prove too great for Sartono.
-
-@sartono_fails
-on-arrival: resources += 1
-
-Sartono was not able to bridge the gaps between the <span style="color: #990000;">**PNI**</span> and the <span style="color: #000000;">**Masyumi**</span>. The President has chosen Sukiman Wirjosandjojo, Legislative head of the <span style="color: #000000;">**Masyumi**</span> and Sidik Djojosukarto, chairman of the <span style="color: #990000;">**PNI**</span>, as *formateurs* for the new cabinet.
-
-- @begin: Begin negotiations.
-
-@begin
-on-arrival: leverage = 25;
+The President has appointed Sartono, a prominent <span style="color: #990000;">**PNI**</span> member and chairman of parliament, as a cabinet *formateur* and given 28 days to form "a national coalition cabinet on a broad basis."
