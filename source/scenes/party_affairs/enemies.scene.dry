@@ -14,7 +14,7 @@ In our media and campaign materials, who should we consider as our main opponent
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
 - @pki: The <span style="color: #c00000;">**PKI**</span>.
-- @islam: The <span style="color: #000000;">Islamic</span> parties - the<span style="color: #000000;">**Masyumi**</span> and <span style="color: #003319;">**PSII**</span>.
+- @islam: The <span style="color: #000000;">Islamic</span> parties - the <span style="color: #000000;">**Masyumi**</span> and the <span style="color: #003319;">**PSII**</span>.
 - @no_enemies: We cannot afford to make any new enemies at the moment.
 - @easy_discard
 
