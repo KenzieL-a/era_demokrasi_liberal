@@ -121,6 +121,16 @@ p {
   margin-bottom: 1em;
   text-indent: 1em;
 }
+
+.scrollable-box {
+  width: 540px;
+  /* Default width */
+  height: 200px;
+  /* Fixed height */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
 p.game-over {
   border: 2px solid #bbb;
   padding: 0.5em;
