@@ -5,7 +5,18 @@ view-if: year = 1951 and month >= 3
 frequency: 1000
 tags: event
 max-visits: 1
-face-image: img/portraits/natsir.jpg
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/natsir.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
 
 = The Natsir Cabinet Falls!
 
