@@ -24,19 +24,22 @@ The President has appointed Sartono, a prominent <span style="color: #990000;">*
 @begin
 face-image: img/portraits/sartono.jpg
 
-In attempting to establish a cabinet based on the <span style="color: #990000;">**PNI**</span> and the <span style="color: #000000;">**Masyumi**</span> Sartono encountered various difficulties. The two parties are entrenched to opposing stands to matters of the turnover tax, regional councils based on Regulation 39, and the complex problems surrounding the West Irian Issue and Indonesian-Dutch relations. On the last series of matters in particular both parties are most divided from one another, with the <span style="color: #990000;">**PNI**</span> wanting a unilateral abrogation of the Netherlands-Indonesia Union and other parts of the Round Table Conference, while the <span style="color: #000000;">**Masyumi**</span> insisting all cancelations of agreements must be made in bilateral accord.
+In attempting to establish a cabinet based on the <span style="color: #990000;">**PNI**</span> and the <span style="color: #000000;">**Masyumi**</span> Sartono encountered various difficulties. The two parties are entrenched to opposing stands to matters of the turnover tax, regional councils based on Regulation 39, the distribution of seats, and the complex problems surrounding the West Irian Issue and Indonesian-Dutch relations. On the last series of matters in particular both parties are most divided from one another, with the <span style="color: #990000;">**PNI**</span> wanting a unilateral abrogation of the Netherlands-Indonesia Union and other parts of the Round Table Conference, while the <span style="color: #000000;">**Masyumi**</span> insisting all cancelations of agreements must be made in bilateral accord.
 
-But the most prominent of matters is the distribution of seats, specifically the post of Prime Minister. Sartono pressed the <span style="color: #000000;">**Masyumi**</span> to accept Susanto Tirtoprodjo of the <span style="color: #990000;">**PNI**</span> and governor of the Lesser Sunda Islands as Prime Minister. On the other hand the <span style="color: #000000;">**Masyumi**</span> argued that this new cabinet will follow the general policy which had been set forth and implemented by the Natsir cabinet, Natsir himself should again become the Prime Minister.
+But the most prominent of matters is the post of Prime Minister. Sartono pressed the <span style="color: #000000;">**Masyumi**</span> to accept Susanto Tirtoprodjo of the <span style="color: #990000;">**PNI**</span> and governor of the Lesser Sunda Islands as Prime Minister. On the other hand, the <span style="color: #000000;">**Masyumi**</span> argued that this new cabinet will follow the general policy which had been set forth and implemented by the Natsir cabinet, Natsir himself should again become the Prime Minister.
 
-- @masyumi-yes: The <span style="color: #000000;">**Masyumi**</span> has accepted.
-- @masyumi-no: The <span style="color: #000000;">**Masyumi**</span> Insists.
+- @pni-concede: Sartono backs down.
+- @masyumi-concede: The <span style="color: #000000;">**Masyumi**</span> backs down.
+- @compromise: Maybe there is a way to compromise?
 
-@masyumi-yes
-subtitle: The <span style="color: #000000;">**Masyumi**</span> has surprisingly agreed to some of our demands, 
-unavailable-subtitle: The ruling pro-Natsir faction of the <span style="color: #000000;">**Masyumi**</span> would never back down.
-choose-if: masyumi_relation >= 40
+@masyumi-concede
+unavailable-subtitle: The Masyumi declares that their claim to the Prime Ministership is unnegotiable.
+choose-if: masyumi_relation >=100
 
-@masyumi-no
-subtitle: The <span style="color: #000000;">**Masyumi**</span> declares that the Prime Ministership is unnegotiable.
-view-if: masyumi_relation <= 39
+@pni-concede
+unavailable-subtitle: Sartono refuses to budge.
+choose-if: masyumi_relation >=100
 
+@compromise
+
+Unfortunately, the hardline Sartono and the ruling Pro-Natsir faction of the <span style="color: #000000;">**Masyumi**</span> are unable to find a middle ground.
