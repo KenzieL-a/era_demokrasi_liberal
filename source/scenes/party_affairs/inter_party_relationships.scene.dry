@@ -39,7 +39,7 @@ Though electorally small, allying the smaller parties like the <span style="colo
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; 
+on-arrival: resources -= 1; masyumi_ideology -= 2
 go-to: masyumi_op if not pni_in_government and masyumi_in_government; masyumi_1 if pni_in_government and masyumi_in_government
 
 @masyumi_op

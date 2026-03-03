@@ -105,13 +105,13 @@ Economic growth: [+ economic_growth_2 +]%
 
 =Party Leadership
 
-{!<span class="tooltip-text" title="Indonesian Nationalist Party" style="color: #990000;"><strong>PNI</strong></span>!}: Sidik Djojosukarto (Marhaenism)
+{!<span class="tooltip-text" title="Indonesian Nationalist Party" style="color: #990000;"><strong>PNI</strong></span>!}: [+ pni_leader +] (Marhaenism)
 
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masyumi</strong></span>!}: [+ masyumi_leader +] (Islamism)
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masyumi</strong></span>!}: [+ masyumi_leader +] ([? if masyumi_ideology >= 31: Islamic Socialism ?][? if masyumi_ideology >= 23 and masyumi_ideology <= 30: Islamic Modernism ?][? if masyumi_ideology >= 17 and masyumi_ideology <= 22: Islamic Democracy ?][? if masyumi_ideology >= 10 and masyumi_ideology <= 16: Islamic Conservatism ?[? if masyumi_ideology <= 10: Islamic Traditionalism ?]][? if masyumi_ideology <= 0: Islamic Fundamentalism ?])
 
 {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: Sutan Sjahrir (Popular Socialism)
 
-{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: -
+{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: Anwar Tjokroaminoto (Islamic Democracy)
 
 {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_leader +] (Marxism-Leninism)
 
