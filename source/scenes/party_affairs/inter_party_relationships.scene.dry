@@ -63,7 +63,7 @@ We are currently coalition partners with them, so improving relations comes natu
 @sukiman_connections
 subtitle: -1 resources
 choose-if: resources >= 1; wilopo_dissent <= 20
-unavailable-subtitle: [+ if resources <= 1: Not enough resources. +][+ if wilopo_dissent >= 20: The party is unwilling. +]
+unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if wilopo_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1
 
 @natsir_connections
@@ -73,7 +73,7 @@ on-arrival: resources -= 1
 @natsir_connections1
 subtitle: -1 resources
 choose-if: resources >= 1; wilopo_dissent <= 20
-unavailable-subtitle: [+ if resources <= 1: Not enough resources. +][+ if wilopo_dissent >= 20: The party is unwilling. +]
+unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if wilopo_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; wilopo_strength += 3
 
 @nasrani
