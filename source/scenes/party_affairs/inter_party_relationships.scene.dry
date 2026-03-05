@@ -42,7 +42,7 @@ Though electorally small, allying the smaller parties like the <span style="colo
 - @natsir_connections: Natsir, the head of the <span style="color: #000000;">**Masjumi**</span> executive branch, is more in line with our current leadership. Perhaps we can establish connections with him?
 - @sukiman_connections1: The older generation of leaders, men like Sidik and Sartono, are seen as more cooperative than other <span style="color: #990000;">**PNI**</span> leaders by the <span style="color: #000000;">**Masjumi**</span> legislative branch. Perhaps we can use them to [? if masyumi_ideology >= 41: appease the Sukimanite <span style="color: #000000;">**Masjumi**</span> leadership? ?][? if masyumi_ideology <= 40: empower Sukiman? ?]
 - @natsir_connections1: The younger, more moderate leaders, such as Wilopo, are seen as more cooperative than other <span style="color: #990000;">**PNI**</span> leaders by the <span style="color: #000000;">**Masjumi**</span> executive branch. Perhaps we can use Wilopo to [? if masyumi_ideology <= 40: appease the Natsirite <span style="color: #000000;">**Masjumi**</span> leadership? ?][? if masyumi_ideology >= 41: empower Natsir? ?]
-- @interparty: Return to main
+- @interparty: What about the other parties?
 
 @masyumi_ties
 subtitle: -1 resources

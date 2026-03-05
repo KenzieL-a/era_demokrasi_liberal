@@ -63,7 +63,7 @@ Konstituante composition:
 
 {!<span class="tooltip-text" title="Indonesian National Party">PNI</span>!}: [+ PNI_r +]%
 
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party">Masyumi</span>!}: [+ Masyumi_r +]%
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party">Masjumi</span>!}: [+ Masyumi_r +]%
 
 {!<span class="tooltip-text" title="Indonesian Communist Party">PKI</span>!}: [+ PKI_r +]%
 
@@ -93,7 +93,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masyumi</strong></span>!}: [+ masyumi_relation : relationships +]
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_relation : relationships +]
 
 {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: [+ psi_relation : relationships +]
 
@@ -107,7 +107,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Indonesian Nationalist Party" style="color: #990000;"><strong>PNI</strong></span>!}: [+ pni_leader +] (Marhaenism)
 
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masyumi</strong></span>!}: [+ masyumi_leader +] ([? if masyumi_ideology <= 0: Islamic Socialism ?][? if masyumi_ideology >= 1 and masyumi_ideology <= 20: Islamic Modernism ?][? if masyumi_ideology >= 21 and masyumi_ideology <= 40: Islamic Democracy ?][? if masyumi_ideology >= 41 and masyumi_ideology <= 60: Islamic Conservatism ?][? if masyumi_ideology >= 61 and masyumi_ideology <= 70: Islamic Traditionalism ?][? if masyumi_ideology >= 71: Islamic Fundamentalism ?])
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_leader +] ([? if masyumi_ideology <= 0: Islamic Socialism ?][? if masyumi_ideology >= 1 and masyumi_ideology <= 20: Islamic Modernism ?][? if masyumi_ideology >= 21 and masyumi_ideology <= 40: Islamic Democracy ?][? if masyumi_ideology >= 41 and masyumi_ideology <= 60: Islamic Conservatism ?][? if masyumi_ideology >= 61 and masyumi_ideology <= 70: Islamic Traditionalism ?][? if masyumi_ideology >= 71: Islamic Fundamentalism ?])
 
 {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: Sutan Sjahrir (Popular Socialism)
 
@@ -175,7 +175,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-<span style="color: #000000;">**Masyumi**</span>: [+ masyumi_votes +]%
+<span style="color: #000000;">**Masjumi**</span>: [+ masyumi_votes +]%
 
 <span style="color: #c00000;">**PKI**</span>: [+ pki_votes +]%
 
