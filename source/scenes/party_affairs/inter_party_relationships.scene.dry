@@ -77,12 +77,14 @@ on-arrival: resources -= 1
 
 @sukiman_connections1
 subtitle: -1 resources
+view-if: (wilopo_strength > sidik_strength) and (wilopo_strength > partindo_strength)
 choose-if: resources >= 1 and partindo_dissent <= 20 and sidik_dissent <= 20
 unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if partindo_dissent >= 20 or sidik_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; partindo_strength += 2; sidik_dissent += 2
 
 @natsir_connections1
 subtitle: -1 resources
+view-if: ((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))
 choose-if: resources >= 1 and wilopo_dissent <= 20
 unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if wilopo_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; wilopo_strength += 3
