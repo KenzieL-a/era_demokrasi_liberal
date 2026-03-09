@@ -33,6 +33,8 @@ on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3
 
 The <span style="color: #c00000;">**Communists**</span> have always been our close ally, but we never get the chance to be in government together with them. However this may change.
 
+@soviet_ambassador
+
 @other
 subtitle: -1 resources
 choose-if: resources >= 1
