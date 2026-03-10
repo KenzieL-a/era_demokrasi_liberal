@@ -101,7 +101,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_relation : relationships +]
 
-{!<span class="tooltip-text" title="The two Christian Parties, Parkindo (Indonesian Christian Party (Protestant)) and the Catholic Party." style="color: #66B2FF;"><strong>Chris</strong></span>!}{!<span class="tooltip-text" title="The two Christian Parties, Parkindo (Indonesian Christian Party (Protestant)) and the Catholic Party." style="color: #330000;"><strong>tians</strong></span>!}: [+ kristen_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Christian Party (Protestant)" style="color: #66B2FF;"><strong>Parkindo</strong></span>!}: [+ kristen_relation : relationships +]
+
+{!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: [+ katolik_relation : relationships +]
+
+{!<span class="tooltip-text" title="Greater Indonesia Union Party" style="color: #894400;"><strong>PIR</strong></span>!}: [+ pir_relation : relationships +]
+
+{!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!}: [+ prn_relation : relationships +]
+
+{!<span class="tooltip-text" title="Labour Party" style="color: #ff0000;"><strong>Buruh</strong></span>!}: [+ buruh_relation : relationships +]
 
 =Party Leadership
 
@@ -115,7 +123,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_leader +] (Marxism-Leninism)
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+{!<span class="tooltip-text" title="Indonesian Christian Party (Protestant)" style="color: #66B2FF;"><strong>Parkindo</strong></span>!}: Johannes Leimena (Christian Democracy)
+
+{!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: I. J. Kasimo (Catholic Democracy)
+
+{!<span class="tooltip-text" title="Greater Indonesia Union Party" style="color: #894400;"><strong>PIR</strong></span>!}: Wongsonegoro (Nationalism)
+
+{!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!}: Djody Gondokusumo (Nationalism)
+
+{!<span class="tooltip-text" title="Labour Party" style="color: #ff0000;"><strong>Buruh</strong></span>!}: Iskandar Tedjakusuma (Labourism)
 
 @paramilitaries
 

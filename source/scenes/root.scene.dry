@@ -99,10 +99,14 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.masyumi_relation = 30;
-Q.psi_relation = 53;
+Q.psi_relation = 50;
 Q.psii_relation = 42;
 Q.kristen_relation = 60;
+Q.katolik_relation = 57;
 Q.pki_relation = 30;
+Q.pir_relation = 60;
+Q.prn_relation = 60;
+Q.buruh_relation = 52;
 
 
 Q.pki_leader = "Alimin";
