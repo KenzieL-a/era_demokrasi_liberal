@@ -56,31 +56,6 @@ Internal dissent: [+ dissent_percent : dissent +]
 <div style="text-align: left;margin-top: -15px;">Strength: [+ partindo_strength : strength +]</div>
 <div style="text-align: left;margin-top: 0px;">Dissent: [+ partindo_dissent : dissent +]</div>
 
-
-= Government
-
-Konstituante composition:
-
-{!<span class="tooltip-text" title="Indonesian National Party">PNI</span>!}: [+ PNI_r +]%
-
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party">Masjumi</span>!}: [+ Masyumi_r +]%
-
-{!<span class="tooltip-text" title="Indonesian Communist Party">PKI</span>!}: [+ PKI_r +]%
-
-{!<span class="tooltip-text" title="Indonesian Socialist Party">PSI</span>!}: [+ PSI_r +]%
-
-{!<span class="tooltip-text" title="Indonesian Islamic Union Party">PSII</span>!}: [+ PSII_r +]%
-
-{!<span class="tooltip-text" title="Indonesian Christian Party">Parkindo</span>!}: [+ Parkindo_r +]%
-
-{!<span class="tooltip-text" title="Catholic Party">Katolik</span>!}: [+ Katolik_r +]%
-
-Others: [+ other_r +]%
-
-[? if PNI_in_government = 1 : Budget: [+ budget +] ?]
-
-Next election: [+ next_election_month : month +] [+ next_election_year +]
-
 = Economics
 
 Inflation: [+ inflation_2 +]%

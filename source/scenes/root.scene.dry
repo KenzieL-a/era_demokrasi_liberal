@@ -330,11 +330,11 @@ Q.foreign_minister_party = '<span style="color: #000000;font-weight: bold;">M</s
 Q.interior_minister = 'Assaat';
 Q.interior_minister_party = 'I';
 Q.justice_minister = 'Wongsonegoro';
-Q.justice_minister_party = '<span style="color: #FF9933;font-weight: bold;">PIR</span>';
+Q.justice_minister_party = '<span style="color: #894400;font-weight: bold;">PIR</span>';
 Q.economic_minister = 'Sumitro Djojohadikusumo';
 Q.economic_minister_party = '<span style="color: #FF6666;font-weight: bold;">PSI</span>';
 Q.publicworks_minister = 'Herman Johannes';
-Q.publicworks_minister_party = '<span style="color: #FF9933;font-weight: bold;">PIR</span>';
+Q.publicworks_minister_party = '<span style="color: #894400;font-weight: bold;">PIR</span>';
 Q.religious_minister = 'Wahid Hasjim';
 Q.religious_minister_party = '<span style="color: #000000;font-weight: bold;">M</span>';
 Q.finance_minister = 'Syafruddin Prawiranegara';
@@ -534,9 +534,9 @@ Q.stampfer_advisor = 0; // Friedrich Stampfer
 set-bg: img/map_2.jpg
 new-page: true
 
-> *"Such a general development cannot be attributed to the false tactics of any single party or to the mistakes of individual leaders. On the contrary, the conduct of individual leaders is determined largely by the sentiments of the people as a whole. It would be erroneous, however, to regard the sentiments of the moment as reflecting the natural make-up and character of the people. They are merely the consequence of the special circumstances which have brought about this profound degradation of the entire nation."*
+> *"The necessity of deliberately allowing and encouraging the instability of society... We welcome this social instability because it provides the opportunity to progress. Progress positively demands an element of instability and even of risk."*
 
- - Karl Kautsky, *Hitlerism and Social Democracy*, 1934
+ - Roeslan Abdulgani
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
