@@ -12,16 +12,16 @@ max-visits: 12
 
 The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet, because we do not have an electoral majority. We can reach out and build additional connections with other parties, or perhaps we can stand alone.
 
-- @islam: The <span style="color: #000000;">Islamic</span> parties.
-- @pki: The <span style="color: #c00000;">Communist</span> Party.
-- @other: Strengthen our bonds with other smaller parties.
+- @islam: The <span style="color: #000000;">Masjumi</span>.
+- @pki: The <span style="color: #c00000;">PKI</span>.
+- @other: The minor nationalist parties.
 - @nasrani: Work together with the <span style="color: #66B2FF;">Christian</span> and <span style="color: #660000;">Catholic </span>parties.
 - @pni_alone: The <span style="color: #990000;">PNI</span> can stand alone for now.
 - @easy_discard
 
 @pki
 
-- @apologize: g h
+- @apologize: 
 - @soviet_ambassador: The <span style="color: #c00000;">**PKI**</span> shares close ties with the <span style="color: #a00000;">**USSR**</span>. 
 
 
@@ -47,9 +47,8 @@ Though electorally small, allying the smaller parties like the <span style="colo
 
 - @masyumi_ties: Meet with their leadership to develop closer ties with the <span style="color: #000000;">**Masjumi**</span>.
 - @sukiman_connections: Sukiman, the head of the <span style="color: #000000;">**Masjumi**</span> legislative branch, is more in line with our current leadership. Perhaps we can establish connections with him?
-- @natsir_connections: Natsir, the head of the <span style="color: #000000;">**Masjumi**</span> executive branch, is more in line with our current leadership. Perhaps we can establish connections with him?
-- @sukiman_connections1: The older generation of leaders, men like Sidik and Sartono, are seen as more cooperative than other <span style="color: #990000;">**PNI**</span> leaders by the <span style="color: #000000;">**Masjumi**</span> legislative branch. Perhaps we can use them to [? if masyumi_ideology >= 41: appease the Sukimanite <span style="color: #000000;">**Masjumi**</span> leadership? ?][? if masyumi_ideology <= 40: empower Sukiman? ?]
-- @natsir_connections1: The younger, more moderate leaders, such as Wilopo, are seen as more cooperative than other <span style="color: #990000;">**PNI**</span> leaders by the <span style="color: #000000;">**Masjumi**</span> executive branch. Perhaps we can use Wilopo to [? if masyumi_ideology <= 40: appease the Natsirite <span style="color: #000000;">**Masjumi**</span> leadership? ?][? if masyumi_ideology >= 41: empower Natsir? ?]
+- @sukiman_connections1: The older generation of leaders, men like Sidik and Sartono, are seen as more cooperative than other <span style="color: #990000;">**PNI**</span> leaders by the current <span style="color: #000000;">**Masjumi**</span> leadership. Perhaps we can use them to appease the <span style="color: #000000;">**Masjumi**</span>? 
+- @natsir_connections: The younger, more moderate leaders, such as Wilopo, are seen as more cooperative than other <span style="color: #990000;">**PNI**</span> leaders by the current <span style="color: #000000;">**Masjumi**</span> leadership. Perhaps we can use Wilopo to appease the <span style="color: #000000;">**Masjumi**</span>? 
 - @interparty: What about the other parties?
 
 @masyumi_ties
@@ -60,39 +59,32 @@ on-arrival: resources -= 1
 go-to: masyumi_op if not pni_in_government and masyumi_in_government; masyumi_1 if pni_in_government and masyumi_in_government
 
 @masyumi_op
-on-arrival: masyumi_relation += 5*(1 - dissent); psii_relation += 3*(1 - dissent)
+on-arrival: masyumi_relation += 2*(wilopo_strength : 10); 
 
 We are currently in opposition to the <span style="color: #000000;">**Masjumi**</span> and our relations remain cold. However this may change.
 
 @masyumi_1
-on-arrival: masyumi_relation += 8*(1 - dissent); psii_relation += 5*(1 - dissent)
+on-arrival: masyumi_relation += 4*(wilopo_strength : 10); 
 
 We are currently coalition partners with them, so improving relations comes naturally.
 
 @sukiman_connections
 subtitle: -1 resources
-view-if: ((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))
+view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Muhammad Natsir"
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 
-@natsir_connections
-subtitle: -1 resources
-view-if: (wilopo_strength > sidik_strength) and (wilopo_strength > partindo_strength)
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources. 
-on-arrival: resources -= 1
-
 @sukiman_connections1
 subtitle: -1 resources
-view-if: (wilopo_strength > sidik_strength) and (wilopo_strength > partindo_strength)
+view-if: (wilopo_strength > sidik_strength) and (wilopo_strength > partindo_strength) and masyumi_leader == "Soekiman Wirjosandjojo"
 choose-if: resources >= 1 and partindo_dissent <= 20 and sidik_dissent <= 20
 unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if partindo_dissent >= 20 or sidik_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; partindo_strength += 2; sidik_dissent += 2
 
-@natsir_connections1
+@natsir_connections
 subtitle: -1 resources
-view-if: ((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))
+view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Muhammad Natsir"
 choose-if: resources >= 1 and wilopo_dissent <= 20
 unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if wilopo_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; wilopo_strength += 3
