@@ -41,6 +41,7 @@ The <span style="color: #c00000;">**Communists**</span> have always been our clo
 - @prn: -
 - @buruh: -
 
+@pir
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
