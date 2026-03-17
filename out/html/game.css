@@ -205,6 +205,7 @@ blockquote + blockquote.attribution {
   margin: 0 auto;
 }
 .tools {
+  margin-left: -4em;
   padding: 0.6em;
   width: 18rem;
   color: var(--text-color);
