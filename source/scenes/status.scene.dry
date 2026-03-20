@@ -88,7 +88,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 =Party Leadership
 
-<div><img src="img/icons/PNI.png" style="height: 15px;"></div> {!<span class="tooltip-text" title="Indonesian Nationalist Party" style="color: #990000;"><strong>PNI</strong></span>!}: [+ pni_leader +] (Marhaenism)
+<div><img src="img/icons/PNI.png" style="height: 15px;"></div>{!<span class="tooltip-text" title="Indonesian Nationalist Party" style="color: #990000;"><strong>PNI</strong></span>!}: [+ pni_leader +] (Marhaenism)
 
 {!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_leader +] ([? if masyumi_ideology <= 0: Islamic Socialism ?][? if masyumi_ideology >= 1 and masyumi_ideology <= 20: Islamic Modernism ?][? if masyumi_ideology >= 21 and masyumi_ideology <= 40: Islamic Democracy ?][? if masyumi_ideology >= 41 and masyumi_ideology <= 60: Islamic Conservatism ?][? if masyumi_ideology >= 61 and masyumi_ideology <= 70: Islamic Traditionalism ?][? if masyumi_ideology >= 71: Islamic Fundamentalism ?])
 
