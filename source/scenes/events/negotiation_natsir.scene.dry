@@ -12,26 +12,77 @@ In attempting to establish a cabinet based on the <span style="color: #990000;">
 
 But the most prominent of matters is the Prime Ministership. Sartono pressed the <span style="color: #000000;">**Masjumi**</span> to accept Susanto Tirtoprodjo of the <span style="color: #990000;">**PNI**</span> and governor of the Lesser Sunda Islands as Prime Minister. On the other hand, the <span style="color: #000000;">**Masjumi**</span> argued that because this new cabinet will follow the general policy which had been set forth and implemented by the Natsir cabinet, Natsir himself should again be the Prime Minister.
 
-- @pni-concede: Back down from the post of Prime Minister
-- @masyumi-concede: The <span style="color: #000000;">**Masjumi**</span> concedes.
-- @compromise: Let the <span style="color: #000000;">**Masjumi**</span> have the Prime Ministership as long as it is not Natsir.
+**Major Demands**
+
+- Back down from the Prime Ministership
+
+- Give up on the Ministry of Foreign Affairs
+
+- Give up on the Ministry of Religious Affairs
+
+**Minor Demands**
+
+- Matters regarding the Round Table Conference must be discussed bilaterally with the Netherlands
+
+- No regional council reform
+
+- Give up on the Ministry of Finance
+
+@natsir_demands
+
+- @finalise: We have come to an agreement.
+- #natsir-major
+- #natsir-minor
 - @fail: The negotiations fail.
 
-@masyumi-concede
-unavailable-subtitle: The Masyumi declares that their claim to the Prime Ministership is unnegotiable.
-choose-if: masyumi_relation >=100
+@finalise
+unavailable-subtitle: The <span style="color: #000000;">**Masjumi**</span> is not satisfied enough with the current arrangement.
+choose-if: masyumi_relation == 1000;
 
-@pni-concede
-subtitle: This move is widely opposed by the party, afterall, why would we bring down Natsir only to bring him back again?
-unavailable-subtitle: Sartono refuses to budge, afterall, why would we bring down Natsir only to bring him back again?
-choose-if: partindo_strength <=20
-on-arrival: partindo_strength -= 5; partindo_dissent += 15; nego_natsir = 1; 
+cheater
 
-Surprisingly, Sartono has reluctantly concede to the <span style="color: #000000;">**Masjumi**</span>'s demand regarding the post of Prime Minister. Unsurprisingly however, much of the party is in uproar. The Sartono-Suwirjo Group, one of the factions of the <span style="color: #990000;">**PNI**</span> in which Sartono is a leading member of, is widely blamed for this "Hypocrisy".
+@natsir-pm
+tags: natsir-major
+title: **Major**: Forfeit our right to the Prime Ministership
+unavailable-subtitle: Much of the party, including Sartono, oppose this. Afterall, why would we bring down Natsir only to bring him back again?
+choose-if: masyumi_relation == 1000;
 
-@compromise
+cheater
 
-Unfortunately, the ruling Pro-Natsir faction of the <span style="color: #000000;">**Masjumi**</span> is too stubborn to accept our fair compromise. 
+@natsir-foreign
+tags: natsir-major
+title: **Major**: Forfeit the Ministry of Foreign Affairs
+subtitle: The <span style="color: #000000;">**Masjumi**</span> hopes to bilaterally negotiate with the Netherlands regarding the Round Table Conference.
+
+We have forfeited the Ministry of Foreign Affairs. This is a major point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us significant progress in negotiations.
+
+@natsir-religion
+tags: natsir-major
+title: **Major**: Forfeit the Ministry of Religious Affairs
+subtitle: The general consensus views the Ministry of Religious Affairs must be held by a religious party (Usually an <span style="color: #000000;">Islamic</span> one), and the <span style="color: #000000;">**Masjumi**</span> is an <span style="color: #000000;">Islamic</span>, religious party.
+
+We have forfeited the Ministry of Religious Affairs. This is a major point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us significant progress in negotiations.
+
+@natsir-r39
+tags: natsir-minor
+title: **Minor**: Pledge to not infringe upon regional councils formed on the basis of Government Regulation No. 39.
+subtitle: Government Regulation No. 39 disproportionately benefits the <span style="color: #000000;">**Masjumi**</span> in regional councils, of course they don't want it to be changed.
+
+We have pledged not to reform the regional councils. This is a minor point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us some progress in negotiations.
+
+@natsir-finance
+tags: natsir-minor
+title: **Minor**: Forfeit the Ministry of Finance
+subtitle: The economic successes of the Natsir cabinet has made the <span style="color: #000000;">**Masjumi**</span> to expect the Finance Ministry to be handed to them again.
+
+We have forfeited the Ministry of Finance. This is a minor point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us some progress in negotiations.
+
+@natsir-budget
+tags: natsir-minor
+title: **Minor**: Pledge to maintain budgetary surplus
+subtitle: Financial stability is expected of any government, especially after the hyperinflation crisis.
+
+We have pledged to maintain budgetary surplus and not to enter a deficit. This is a minor point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us some progress in negotiations.
 
 - @fail: The negotiations fail.
 

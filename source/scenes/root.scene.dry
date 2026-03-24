@@ -113,6 +113,7 @@ Q.pki_leader = "Alimin";
 Q.masyumi_leader = "Muhammad Natsir";
 // higher means more left
 Q.masyumi_ideology = 30;
+Q.masyumi_ideology1 = "Islamic Democracy";
 Q.pni_leader = "Sidik Djojosukarto";
 
 // hmm... maybe we can play nice with Hindenburg???
