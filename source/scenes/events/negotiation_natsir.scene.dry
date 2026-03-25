@@ -123,9 +123,8 @@ view-if: natsir_budget_accepted = 1
 on-arrival: natsir_budget_accepted = 0
 go-to: natsir_demands
 
-- @fail: The negotiations fail.
-
 @fail
+subtitle: Sartono has failed.
 on-arrival: nego_natsir = 1
 
 It appears that the difficulties of bridging the two biggest opposing parties prove too great for Sartono. Sartono is expected to return his mandate back to the President so that a new *formateur* is appointed.
