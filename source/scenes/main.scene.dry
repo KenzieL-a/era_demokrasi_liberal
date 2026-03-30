@@ -50,7 +50,7 @@ max-cards: 4
 
 @party
 title: Party Affairs
-card-image: img/pni_conference.png
+card-image: img/pni-conference.png
 is-deck: true
 
 - #party_affairs
