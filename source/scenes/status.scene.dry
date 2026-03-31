@@ -3,7 +3,7 @@ new-page: true
 is-special: true
 on-arrival: {!
 if (Q.unemployed) {
-    Q.unemployed_2 = Q.unemployed.toFixed(1);
+    Q.santri_2 = Q.unemployed.toFixed(1);
 }
 if (Q.inflation) {
     Q.inflation_2 = Q.inflation.toFixed(1);
@@ -60,7 +60,7 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 Inflation: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+[? if black_thursday_seen = 1 : Unemployment: [+ santri_2 +]% ?]
 
 Economic growth: [+ economic_growth_2 +]%
 
@@ -68,13 +68,13 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_relation : relationships +]
+<img src="img/icons/masjumi.png" style="height: 10px;"> {!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: [+ psi_relation : relationships +]
+<img src="img/icons/PSI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: [+ psi_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: [+ psii_relation : relationships +]
+<img src="img/icons/PSII.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: [+ psii_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_relation : relationships +]
+<img src="img/icons/PKI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_relation : relationships +]
 
 {!<span class="tooltip-text" title="Indonesian Christian Party (Protestant)" style="color: #66B2FF;"><strong>Parkindo</strong></span>!}: [+ kristen_relation : relationships +]
 
@@ -187,129 +187,84 @@ Others: [+ other_votes +]%
     <table style="text-align:center; border-spacing: 0.3em;">
             <tr>
             <th>Party</th>
-            <th>Rural</th>
-            <th>Workers</th>
-            <th>Middle Class</th>
-            <th>Aristocrats</th>
-            <th>*Santri*</th>
-            <th>Christians</th>
+            Rural
+            Workers
+            Middle Class
+            Aristocrats
+            *Santri*
+            Christians
         </tr>
         <tr>
             <td><span style="color: #990000;">**PNI**</span></td>
-            <td style="background-color: rgba(192, 0, 0, 0.1); padding: 10px;">[+ workers_pni_display +]%</td>
-            <td style="background-color: rgba(192, 0, 0, 0.1);">[+ new_middle_pni_display +]%</td>
-            <td style="background-color: rgba(192, 0, 0, 0.1);">[+ old_middle_spd_display +]%</td>
-            <td style="background-color: rgba(192, 0, 0, 0.1); ">[+ rural_spd_display +]%</td>
-            <td style="background-color: rgba(192, 0, 0, 0.1);">[+ unemployed_spd_display +]%</td>
-            <td style="background-color: rgba(192, 0, 0, 0.1);">[+ catholics_spd_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.1); padding: 10px;">[+ rural_pni_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.1);">[+ workers_pni_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.1);">[+ middle_pni_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.1); ">[+ aristocrats_pni_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.1);">[+ santri_pni_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ christians_pni_display +]%</td>
         </tr>
         <tr>
             <td><span style="color: #000000;">**Masjumi**</span></td>
-            <td style="background-color: rgba(0, 0, 0, 0.2); padding: 10px;">[+ workers_z_display +]%</td>
-            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ new_middle_z_display +]%</td>
-            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ old_middle_z_display +]%</td>
-            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ rural_z_display +]%</td>
-            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ unemployed_z_display +]%</td>
-            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ catholics_z_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2); padding: 10px;">[+ rural_masyumi_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ workers_masyumi_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ middle_masyumi_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ aristocrats_masyumi_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ santri_masyumi_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ christians_masyumi_display +]%</td>
         </tr>
         <tr>
             <td><span style="color: #c00000;">**PKI**</span></td>
-            <td style="background-color: rgba(112, 0, 0, 0.2); padding: 10px;">[+ workers_kpd_display +]%</td>
-            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ new_middle_kpd_display +]%</td>
-            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ old_middle_kpd_display +]%</td>
-            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ rural_kpd_display +]%</td>
-            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ unemployed_kpd_display +]%</td>
-            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ catholics_kpd_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.2); padding: 10px;">[+ workers_pki_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.2);">[+ workers_pki_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.2);">[+ middle_pki_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.2);">[+ aristocrats_pki_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.2);">[+ santri_pki_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.2);">[+ christians_pki_display +]%</td>
         </tr>
-        [? if not lvp_formed: <tr>
-            <td><span style="color: #D3C24D;">**[+ ddp_name +]**</span></td>
-            <td style="background-color: rgba(211, 194, 77, 0.2); padding: 10px;">[+ workers_ddp_display +]%</td>
-            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ new_middle_ddp_display +]%</td>
-            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ old_middle_ddp_display +]%</td>
-            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ rural_ddp_display +]%</td>
-            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ unemployed_ddp_display +]%</td>
-            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ catholics_ddp_display +]%</td>
-        </tr>
-        [? if dvp_exist: <tr>
-            <td><span style="color: #C0A054;">**DVP**</span></td>
-            <td style="background-color: rgba(192, 160, 84, 0.2); padding: 10px;">[+ workers_dvp_display +]%</td>
-            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ new_middle_dvp_display +]%</td>
-            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ old_middle_dvp_display +]%</td>
-            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ rural_dvp_display +]%</td>
-            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ unemployed_dvp_display +]%</td>
-            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ catholics_dvp_display +]%</td>
-        </tr> ?]?]
-        [? if lvp_formed: <tr>
-            <td><span style="color: #FFCC00;">**LVP**</span></td>
-            <td style="background-color: rgba(255, 204, 0, 0.2); padding: 10px;">[+ workers_lvp_display +]%</td>
-            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ new_middle_lvp_display +]%</td>
-            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ old_middle_lvp_display +]%</td>
-            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ rural_lvp_display +]%</td>
-            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ unemployed_lvp_display +]%</td>
-            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ catholics_lvp_display +]%</td>
-        </tr> ?]
-        [? if kvp_formed and not dnvp_dvp_formed: {!<tr>!}
-            <td><span style="color: #0087DC;">**KVP**</span></td>
-            <td style="background-color: rgba(0, 135, 220, 0.2); padding: 10px;">[+ workers_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ new_middle_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ old_middle_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ rural_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ unemployed_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ catholics_kvp_display +]%</td>
-        {!</tr>!} ?]
-        [? if dnvp_dvp_formed: {!<tr>!}
-            <td><span style="color: #00C0FF;">**FKP**</span></td>
-            <td style="background-color: rgba(0, 192, 255, 0.2); padding: 10px;">[+ workers_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ new_middle_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ old_middle_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ rural_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ unemployed_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ catholics_kvp_display +]%</td>
-        {!</tr>!} ?]
-        [? if not cvp_formed and not dnvp_defunct: <tr>
-            <td><span style="color: #3E88B3;">**DNVP**</span></td>
-            <td style="background-color: rgba(44, 81, 122, 0.2); padding: 10px;">[+ workers_dnvp_display +]%</td>
-            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ new_middle_dnvp_display +]%</td>
-            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ old_middle_dnvp_display +]%</td>
-            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ rural_dnvp_display +]%</td>
-            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ unemployed_dnvp_display +]%</td>
-            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ catholics_dnvp_display +]%</td>
-        </tr> ?]
-        [? if dnf_formed: {!<tr>!}
-            <td><span style="color: #003755;">**DNF**</span></td>
-            <td style="background-color: rgba(0, 31, 48, 0.2); padding: 10px;">[+ workers_dnf_display +]%</td>
-            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ new_middle_dnf_display +]%</td>
-            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ old_middle_dnf_display +]%</td>
-            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ rural_dnf_display +]%</td>
-            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ unemployed_dnf_display +]%</td>
-            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ catholics_dnf_display +]%</td>
-        {!</tr>!} ?]
-        [? if not nsdap_split: {!<tr>!}
-            <td><span style="color: #7A3C00;">**NSDAP**</span></td>
-            <td style="background-color: rgba(122, 60, 0, 0.2); padding: 10px;">[+ workers_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ new_middle_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ old_middle_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ rural_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ unemployed_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ catholics_nsdap_display +]%</td>
-        {!</tr>!} ?]
-        [? if nsdap_split: {!<tr>!}
-            <td><span style="color: #7A3C00;">**NSDAP**</span></td>
-            <td style="background-color: rgba(106, 30, 30, 0.2); padding: 10px;">[+ workers_nsdap_display +]%</td>
-            <td style="background-color: rgba(106, 30, 30, 0.2);">[+ new_middle_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ old_middle_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ rural_nsdap_display +]%</td>
-            <td style="background-color: rgba(20, 46, 32, 0.2);">[+ unemployed_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ catholics_nsdap_display +]%</td>
-        {!</tr>!} ?]
         <tr>
-            <td>**Others**</td>
+            <td><span style="color: #FF6666;">**PSI**</span></td>
+            <td style="background-color: rgba(255, 55, 55, 0.2); padding: 10px;">[+ workers_psi_display +]%</td>
+            <td style="background-color: rgba(255, 55, 55, 0.2);">[+ workers_psi_display +]%</td>
+            <td style="background-color: rgba(255, 55, 55, 0.2);">[+ middle_psi_display +]%</td>
+            <td style="background-color: rgba(255, 55, 55, 0.2);">[+ aristocrats_psi_display +]%</td>
+            <td style="background-color: rgba(255, 55, 55, 0.2);">[+ santri_psi_display +]%</td>
+            <td style="background-color: rgba(255, 55, 55, 0.2);">[+ christians_psi_display +]%</td>
+        </tr>
+        <tr>
+            <td><span style="color: #003319;">**PSII**</span></td>
+            <td style="background-color: rgba(0, 107, 12, 0.2); padding: 10px;">[+ workers_psii_display +]%</td>
+            <td style="background-color: rgba(0, 107, 12, 0.2);">[+ workers_psii_display +]%</td>
+            <td style="background-color: rgba(0, 107, 12, 0.2);">[+ middle_psii_display +]%</td>
+            <td style="background-color: rgba(0, 107, 12, 0.2);">[+ aristocrats_psii_display +]%</td>
+            <td style="background-color: rgba(0, 107, 12, 0.2);">[+ santri_psii_display +]%</td>
+            <td style="background-color: rgba(0, 107, 12, 0.2);">[+ christians_psii_display +]%</td>
+        </tr> 
+        <tr>
+            <td><span style="color: #66B2FF;">**Parkindo**</span></td>
+            <td style="background-color: rgba(0, 135, 220, 0.2); padding: 10px;">[+ workers_kristen_display +]%</td>
+            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ workers_kristen_display +]%</td>
+            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ middle_kristen_display +]%</td>
+            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ aristocrats_kristen_display +]%</td>
+            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ santri_kristen_display +]%</td>
+            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ christians_kristen_display +]%</td>
+        </tr>
+        <tr>
+            <td><span style="color: #330000;">**Katolik**</span></td>
+            <td style="background-color: rgba(70, 0, 0, 0.2); padding: 10px;">[+ workers_katolik_display +]%</td>
+            <td style="background-color: rgba(70, 0, 0, 0.2);">[+ workers_katolik_display +]%</td>
+            <td style="background-color: rgba(70, 0, 0, 0.2);">[+ middle_katolik_display +]%</td>
+            <td style="background-color: rgba(70, 0, 0, 0.2);">[+ aristocrats_katolik_display +]%</td>
+            <td style="background-color: rgba(70, 0, 0, 0.2);">[+ santri_katolik_display +]%</td>
+            <td style="background-color: rgba(70, 0, 0, 0.2);">[+ christians_katolik_display +]%</td>
+        </tr>
+        <tr>
+            <td>Others</td>
             <td style="background-color: rgba(153, 153, 153, 0.1); padding: 10px;">[+ workers_other_display +]%</td>
-            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ new_middle_other_display +]%</td>
-            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ old_middle_other_display +]%</td>
-            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ rural_other_display +]%</td>
-            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ unemployed_other_display +]%</td>
-            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ catholics_other_display +]%</td>
+            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ workers_other_display +]%</td>
+            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ middle_other_display +]%</td>
+            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ aristocrats_other_display +]%</td>
+            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ santri_other_display +]%</td>
+            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ christians_other_display +]%</td>
         </tr>
     </table>
 </div>
