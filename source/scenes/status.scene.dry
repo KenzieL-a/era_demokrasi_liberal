@@ -183,7 +183,7 @@ Others: [+ other_votes +]%
 **Detailed results for each demographic**
 
 
-<div style="overflow-x:auto; font-size: 10px;">
+<div style="overflow-x:auto; font-size: 10px; height: 50px;">
     <table style="text-align:center; border-spacing: 0.3em;">
             <tr>
             <th>Party</th>
@@ -194,7 +194,7 @@ Others: [+ other_votes +]%
             <th>*Santri*</th>
             <th>Christians</th>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #990000;">**PNI**</span></td>
             <td style="background-color: rgba(112, 0, 0, 0.2); padding: 10px;">[+ rural_pni_display +]%</td>
             <td style="background-color: rgba(112, 0, 0, 0.2);">[+ workers_pni_display +]%</td>
@@ -203,7 +203,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(112, 0, 0, 0.2);">[+ santri_pni_display +]%</td>
             <td style="background-color: rgba(112, 0, 0, 0.2);">[+ christians_pni_display +]%</td>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #000000;">**Masjumi**</span></td>
             <td style="background-color: rgba(0, 0, 0, 0.2); padding: 10px;">[+ rural_masyumi_display +]%</td>
             <td style="background-color: rgba(0, 0, 0, 0.2);">[+ workers_masyumi_display +]%</td>
@@ -212,7 +212,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(0, 0, 0, 0.2);">[+ santri_masyumi_display +]%</td>
             <td style="background-color: rgba(0, 0, 0, 0.2);">[+ christians_masyumi_display +]%</td>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #c00000;">**PKI**</span></td>
             <td style="background-color: rgba(192, 0, 0, 0.2); padding: 10px;">[+ workers_pki_display +]%</td>
             <td style="background-color: rgba(192, 0, 0, 0.2);">[+ workers_pki_display +]%</td>
@@ -221,7 +221,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(192, 0, 0, 0.2);">[+ santri_pki_display +]%</td>
             <td style="background-color: rgba(192, 0, 0, 0.2);">[+ christians_pki_display +]%</td>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #FF6666;">**PSI**</span></td>
             <td style="background-color: rgba(255, 55, 55, 0.2); padding: 10px;">[+ workers_psi_display +]%</td>
             <td style="background-color: rgba(255, 55, 55, 0.2);">[+ workers_psi_display +]%</td>
@@ -230,7 +230,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(255, 55, 55, 0.2);">[+ santri_psi_display +]%</td>
             <td style="background-color: rgba(255, 55, 55, 0.2);">[+ christians_psi_display +]%</td>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #003319;">**PSII**</span></td>
             <td style="background-color: rgba(0, 107, 12, 0.2); padding: 10px;">[+ workers_psii_display +]%</td>
             <td style="background-color: rgba(0, 107, 12, 0.2);">[+ workers_psii_display +]%</td>
@@ -239,7 +239,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(0, 107, 12, 0.2);">[+ santri_psii_display +]%</td>
             <td style="background-color: rgba(0, 107, 12, 0.2);">[+ christians_psii_display +]%</td>
         </tr> 
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #66B2FF;">**Parkindo**</span></td>
             <td style="background-color: rgba(0, 135, 220, 0.2); padding: 10px;">[+ workers_kristen_display +]%</td>
             <td style="background-color: rgba(0, 135, 220, 0.2);">[+ workers_kristen_display +]%</td>
@@ -248,7 +248,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(0, 135, 220, 0.2);">[+ santri_kristen_display +]%</td>
             <td style="background-color: rgba(0, 135, 220, 0.2);">[+ christians_kristen_display +]%</td>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td><span style="color: #330000;">**Katolik**</span></td>
             <td style="background-color: rgba(70, 0, 0, 0.2); padding: 10px;">[+ workers_katolik_display +]%</td>
             <td style="background-color: rgba(70, 0, 0, 0.2);">[+ workers_katolik_display +]%</td>
@@ -257,7 +257,7 @@ Others: [+ other_votes +]%
             <td style="background-color: rgba(70, 0, 0, 0.2);">[+ santri_katolik_display +]%</td>
             <td style="background-color: rgba(70, 0, 0, 0.2);">[+ christians_katolik_display +]%</td>
         </tr>
-        <tr style="height: 10px;">
+        <tr>
             <td>Others</td>
             <td style="background-color: rgba(153, 153, 153, 0.1); padding: 10px;">[+ workers_other_display +]%</td>
             <td style="background-color: rgba(153, 153, 153, 0.1);">[+ workers_other_display +]%</td>
