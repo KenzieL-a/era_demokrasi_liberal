@@ -180,7 +180,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 Others: [+ other_votes +]%
 
-**Detailed results for each demographic**
+= Demographics
 
 
 <div style="overflow-x:auto; font-size: 10px; height: 50px;">
