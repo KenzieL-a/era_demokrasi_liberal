@@ -40,9 +40,9 @@ Party dues: [+ dues +]
 
 [? if PNI_in_government and (in_left_front or in_popular_front): PKI coalition dissent: [+ PKI_coalition_dissent : coalition_dissent +] ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
-
 = Internal Factions of the <span style="color: #990000;">**PNI**</span>
+
+Internal dissent: [+ dissent_percent : dissent +]
 
 {!<span class="tooltip-text" title="Wilopo's faction mostly consists of moderate, younger figures of the party.">Wilopo Group</span>!} (Moderates) 
 <div style="text-align: left;margin-top: -15px;">Strength: [+ wilopo_strength : strength +]</div>
