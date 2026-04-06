@@ -3,12 +3,12 @@ is-pinned-card: true
 tags: advisor
 card-image: img/portraits/sarmidi.jpg
 new-page: true
+face-image: img/portraits/sarmidi.jpg
 view-if: sarmidi_advisor = 1
 
 = Sarmidi Mangunsarkoro
 
-
-Ki Sarmidi Mangunsarkoro is a former [? if education_minister = "Ki Sarmidi Mangunsarkoro": and current ?] Minister of Education and Culture, and is a long-time expert on the field of national education.
+Sarmidi Mangunsarkoro was born in Surakarta on May 23, 1904; he was educated at a teachers' school, and spent the major part of his early days as a Taman Siswa teacher. He later headed the education section of the Central Headquarters of the Djawa Hookookai. Before the war, Sarmidi was a member of the PNI and later both Partindo and Gerindo. He was the general secretary of Serindo in 1945, and, at the fusion congress in February 1946, he was elected chairman of the PNI. He was replaced by A. K. Gani as chairman in March 1947. He is currently holding various positions in the top party leadership.
 
 - @education
 - @emergency_fundraising
