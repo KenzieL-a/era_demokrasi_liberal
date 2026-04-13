@@ -16,7 +16,7 @@ if (!document.getElementById('news_tab')) {
     button.style.backgroundColor = '#dddddd';
     button.className = 'tab_button';
     button.id = 'news_tab';
-    button.textContent = 'View Right-Wing News';
+    button.textContent = 'View Global News';
     button.onclick = function () {
         toggleNews();
     };
@@ -30,7 +30,7 @@ if (!document.getElementById('news_tab')) {
         }
     });
     if (hasTextContent) {
-        button.style.backgroundColor = 'rgba(255, 0, 0, 0.5)'; // New color
+        button.style.backgroundColor = 'rgba(55, 0, 255, 0.5)'; // New color
     } else {
         button.style.backgroundColor = '#dddddd'; // Original color
     }
@@ -70,7 +70,6 @@ if (Q.advisor_action_timer <= 0) {
     Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
 }
 !}
-
 max-cards: 4
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
