@@ -13,117 +13,19 @@ In attempting to establish a cabinet based on the <span style="color: #990000;">
 
 But the most prominent of matters is the Prime Ministership. Sartono pressed the <span style="color: #000000;">**Masjumi**</span> to accept Susanto Tirtoprodjo of the <span style="color: #990000;">**PNI**</span> and governor of the Lesser Sunda Islands as Prime Minister. On the other hand, the <span style="color: #000000;">**Masjumi**</span> argued that because this new cabinet will follow the general policy which had been set forth and implemented by the Natsir cabinet, Natsir himself should again be the Prime Minister.
 
-Nevertheless, negotiations have begun. The <span style="color: #000000;">**Masjumi**</span> has presented their demands.
+- @pni-concede: Let go of our claim of the Prime Ministership.
+- @masjumi-concede: The <span style="color: #000000;">**Masjumi**</span> caves in to our demand.
+- @failure: The negotiations fail.
 
-@natsir_demands
-
-- @finalise: We have come to an agreement.
-- #natsir_major
-- #natsir_minor
-- @fail: The negotiations fail.
-- #drop_natsir_major
-- #drop_natsir_minor
-
-@finalise
-unavailable-subtitle: The <span style="color: #000000;">**Masjumi**</span> is not satisfied enough with the current arrangement.
+@pni-concede
+unavailable-subtitle: Sartono refuses. Afterall, why would we bring down Natsir only to bring him back?
 choose-if: masyumi_relation >= 100
 
-cheater
-
-@natsir_pm
-tags: natsir_major
-title: **Major**: Forfeit our right to the Prime Ministership
-unavailable-subtitle: Much of the party, including Sartono, oppose this. Afterall, why would we bring down Natsir only to bring him back again?
+@masjumi-concede
+unavailable-subtitle: The <span style="color: #000000;">**Masjumi**</span> continues to press their claim on the Prime Ministership.
 choose-if: masyumi_relation >= 100
 
-cheater
-
-@natsir_foreign
-tags: natsir_major
-title: **Major**: Forfeit the Ministry of Foreign Affairs
-subtitle: The <span style="color: #000000;">**Masjumi**</span> hopes to bilaterally negotiate with the Netherlands regarding the Round Table Conference.
-view-if: natsir_foreign_accepted = 0
-on-arrival: natsir_foreign_accepted = 1
-go-to: natsir_demands
-
-We have forfeited the Ministry of Foreign Affairs. This is a major point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us significant progress in negotiations.
-
-@natsir_religion
-tags: natsir_major
-title: **Major**: Forfeit the Ministry of Religious Affairs
-subtitle: The general consensus views the Ministry of Religious Affairs must be held by a religious party (Usually an <span style="color: #000000;">Islamic</span> one), and the <span style="color: #000000;">**Masjumi**</span> is an <span style="color: #000000;">Islamic</span>, religious party.
-view-if: natsir_religion_accepted = 0
-on-arrival: natsir_religion_accepted = 1
-go-to: natsir_demands
-
-We have forfeited the Ministry of Religious Affairs. This is a major point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us significant progress in negotiations.
-
-@natsir_r39
-tags: natsir_minor
-title: **Minor**: Pledge to not infringe upon regional councils formed on the basis of Government Regulation No. 39.
-subtitle: Government Regulation No. 39 disproportionately benefits the <span style="color: #000000;">**Masjumi**</span> in regional councils, of course they don't want it to be changed.
-view-if: natsir_r39_accepted = 0
-on-arrival: natsir_r39_accepted = 1
-go-to: natsir_demands
-
-We have pledged not to reform the regional councils. This is a minor point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us some progress in negotiations.
-
-@natsir_finance
-tags: natsir_minor
-title: **Minor**: Forfeit the Ministry of Finance
-subtitle: The economic successes of the Natsir cabinet has made the <span style="color: #000000;">**Masjumi**</span> to expect the Finance Ministry to be handed to them again.
-view-if: natsir_finance_accepted = 0
-on-arrival: natsir_finance_accepted = 1
-go-to: natsir_demands
-
-We have forfeited the Ministry of Finance. This is a minor point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us some progress in negotiations.
-
-@natsir_budget
-tags: natsir_minor
-title: **Minor**: Pledge to maintain budgetary surplus
-subtitle: Financial stability is expected of any government, especially after the hyperinflation crisis.
-view-if: natsir_budget_accepted = 0
-on-arrival: natsir_budget_accepted = 1
-go-to: natsir_demands
-
-We have pledged to maintain budgetary surplus and not to enter a deficit. This is a minor point of conjecture for the <span style="color: #000000;">**Masjumi**</span>, and secures us some progress in negotiations.
-
-@drop_natsir_foreign
-tags: drop_natsir_major
-title: **Major**: Drop our promise to forfeit the Ministry of Foreign Affairs
-view-if: natsir_foreign_accepted = 1
-on-arrival: natsir_foreign_accepted = 0
-go-to: natsir_demands
-
-@drop_natsir_religion
-tags: drop_natsir_major
-title: **Major**: Drop our promise to forfeit the Ministry of Religious Affairs
-view-if: natsir_religion_accepted = 1
-on-arrival: natsir_religion_accepted = 0
-go-to: natsir_demands
-
-@drop_natsir_r39
-tags: drop_natsir_minor
-title: **Minor**: Drop our promise to not infringe upon regional councils
-view-if: natsir_r39_accepted = 1
-on-arrival: natsir_r39_accepted = 0
-go-to: natsir_demands
-
-@drop_natsir_finance
-tags: drop_natsir_minor
-title: **Minor**: Drop our promise to forfeit the Ministry of Finance
-view-if: natsir_finance_accepted = 1
-on-arrival: natsir_finance_accepted = 0
-go-to: natsir_demands
-
-@drop_natsir_budget
-tags: drop_natsir_minor
-title: **Minor**: Drop our promise to maintain budgetary surplus
-view-if: natsir_budget_accepted = 1
-on-arrival: natsir_budget_accepted = 0
-go-to: natsir_demands
-
-@fail
+@failure
 subtitle: Sartono has failed.
 on-arrival: nego_natsir = 1
 
