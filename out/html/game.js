@@ -275,10 +275,10 @@
       elements.forEach(function (element) {
           if (element.style.display !== 'block') {
               element.style.display = 'block';
-              button.innerHTML = "View Other News";
+              button.innerHTML = "View Local News";
           } else {
               element.style.display = 'none';
-              button.innerHTML = "View Right-Wing News";
+              button.innerHTML = "View Global News";
           }
       });
 

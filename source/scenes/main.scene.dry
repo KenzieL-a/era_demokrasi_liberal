@@ -90,7 +90,7 @@ if (!document.getElementById('news_tab')) {
         }
     });
     if (hasTextContent) {
-        button.style.backgroundColor = 'rgba(55, 0, 255, 0.5)'; // New color
+        button.style.backgroundColor = 'rgba(102, 178, 255, 1)'; // New color
     } else {
         button.style.backgroundColor = '#dddddd'; // Original color
     }
