@@ -5,7 +5,6 @@ tags: event
 max-visits: 1
 view-if: natsir_vonc = 1 and bpp_join != 1
 face-image: img/portraits/sartono.jpg
-go-to: natsir_demands
 
 = Negotiations for a New Cabinet
 
