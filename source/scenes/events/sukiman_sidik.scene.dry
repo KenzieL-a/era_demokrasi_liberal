@@ -13,7 +13,7 @@ On April 18 Sartono met to the President to report his failure as *formateur* an
 
 @sukiman-sidik
 
-The President has announced the names of two new *formateurs*, Sidik Djojosukarto, chairman of the <span style="color: #990000;">**PNI**</span>, and Sukiman Wirjosandjojo, chairman of the <span style="color: #000000;">**Masjumi**</span> party council. The two are expected to form a "coalition cabinet on a broad national basis" in five days with a three day extension.
+The President has announced the names of two new *formateurs*, Sidik Djojosukarto, chairman of the <span style="color: #990000;">**PNI**</span>, and Sukiman Wirjosandjojo, chairman of the <span style="color: #000000;">**Masjumi**</span> party council. The two are expected to form a "coalition cabinet on a broad national basis" in five days.
 
 - @begin: Begin negotiations..
 
@@ -29,3 +29,55 @@ After some internal bickering the Natsir-led executive reluctantly endorsed Suki
 
 By this time the two had discussed various compromise proposals as a way to bridge the gap between the main parties on such issues as the turnover tax, regional councils based on Regulation 39, and importantly the abrogation of the Netherlands-Indonesia Union and other parts of the Round Table Conference. There remained the old question however, of the distribution of seats and the Prime Ministership. It seems that the <span style="color: #000000;">**Masjumi**</span> is still pressing their claim on the Prime Ministership, but maybe they are more open to compromises with Sukiman as their representative.
 
+- @pni-concede: Let go of our claim of the Prime Ministership.
+- @masjumi-concede: The <span style="color: #000000;">**Masjumi**</span> caves in to our demand.
+- @compromise: Give the Prime Ministership to a third party as a compromise.
+- @failure: The negotiations fail.
+
+@pni-concede
+unavailable-subtitle: Much of the party and Sidik himslef is against this.
+choose-if: masyumi_relation >= 100
+
+@masjumi-concede
+unavailable-subtitle: The <span style="color: #000000;">**Masjumi**</span>, even with Sukiman, continues to press their claim on the Prime Ministership.
+choose-if: masyumi_relation >= 100
+
+@compromise
+subtitle: By continuing, we will accept a three-day extension offered by the President, possibly angering the Natsirite <span style="color: #000000;">**Masjumi**</span>.
+go-to: compromise-no if masyumi_relation < 55; compromise-yes if masyumi_relation >= 55
+
+@compromise-no
+
+Sukiman rejects our compromise proposal and urged the appointment of a <span style="color: #000000;">**Masjumi**</span> Prime Minister.
+
+- @compromise2: Let the <span style="color: #000000;">**Masjumi**</span> have the Prime Ministership as long as it is not Natsir.
+- @failure
+
+@compromise2
+subtitle: This will increase dissent.
+
+Sukiman has accepted our offer to appoint a non-Natsir member of the <span style="color: #000000;">**Masjumi**</span> to the Prime Ministership. Furthermore Sukiman agreed to the request of the President that he should accept the Prime Ministership.
+
+- @root
+
+@compromise-yes
+
+Sukiman has accepted our compromise proposal. Now we must who this third party will be.
+
+- @assaat: Assaat
+- @wongsonegoro: Wongsonegoro
+
+@assaat
+subtitle: Former acting President of the Republic of Indonesia and Minister of Internal Affairs in the Natsir cabinet.
+
+Assaat is appointed as Prime Minister. Now we must select our ministries.
+
+@wongsonegoro
+subtitle: Former governor of Central Java, an experienced minister and leader of the <span style="color: #894400;">**PIR**</span>
+
+Wongsonegoro is appointed as Prime Minister. Now we must select our ministries.
+
+@failure
+subtitle: We have failed to come to an agreement.
+
+It appears that the difficulties of bridging the two biggest opposing parties prove too great for Sidik and Sukiman. They are expected to return their mandate back to the President so that a new *formateur* is appointed.
