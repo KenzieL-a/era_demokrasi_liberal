@@ -44,7 +44,7 @@ choose-if: masyumi_relation >= 100
 
 @compromise
 subtitle: By continuing, we will accept a three-day extension offered by the President, possibly angering the Natsirite <span style="color: #000000;">**Masjumi**</span>.
-go-to: compromise-no if masyumi_relation < 55; compromise-yes if masyumi_relation >= 55
+go-to: compromise-no if masyumi_relation < 40; compromise-yes if masyumi_relation >= 40
 
 @compromise-no
 
