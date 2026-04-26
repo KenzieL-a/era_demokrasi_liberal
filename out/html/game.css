@@ -591,6 +591,12 @@ table {
 .seat.katolik {
     fill: #330000;
 }
+.seat.psii {
+    fill: #003319;
+}
+.seat.masyumi {
+    fill: #000000;
+}
 
 .tooltip-text {
   cursor: help;
