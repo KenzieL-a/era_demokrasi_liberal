@@ -70,7 +70,7 @@ subtitle: {!<div style="display: flex;justify-content: left;">
 
 @compromise-yes
 
-Sukiman has accepted our compromise proposal. Now we must who this third party will be.
+Sukiman has accepted our compromise proposal. Now we must decide who this third party will be.
 
 - @assaat: Assaat
 - @wongsonegoro: Wongsonegoro
@@ -86,7 +86,7 @@ Assaat is appointed as Prime Minister. Now we must select our ministries.
 @wongsonegoro
 subtitle: {!<div style="display: flex;justify-content: left;">
 <img src="img/portraits/wongsonegoro.jpg" style="width: 100px;border: 5px solid var(--card-border-color);margin: 10px"> 
-<div style="width: 300px;">Former governor of Central Java, an experienced minister and leader of the <span style="color: #FF9933;">**PIR**</span></div>
+<div style="width: 300px;">Former governor of Central Java, an experienced minister and leader of the <span style="color: #FF9933;font-weight: bold;">PIR</span></div>
 </div>!}
 
 Wongsonegoro is appointed as Prime Minister. Now we must select our ministries.
