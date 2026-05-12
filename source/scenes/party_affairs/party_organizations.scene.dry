@@ -23,10 +23,12 @@ In addition to being a political party, the <span style="color: #990000;">**PNI*
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -2 resources. All major parties have their own affiliated newspaper except for us.
-face-image: img/suluh.jpeg
 on-arrival: resources -= 2; newspaper = 1;
 
-We have launched our own weekly newspaper veritably named "<span class="tooltip-text" title="Torch of Indonesia">*Suluh Indonesia*</span>". We can utilize this as one of our campaign media, effectively garnering support, especially among the middle class.
+{!<div style="display: flex;justify-content: left;">
+<img src="img/suluh.jpeg" style="width: 100px;border: 5px solid var(--card-border-color);margin: 10px"> 
+<div style="width: 300px;">We have launched our own weekly newspaper veritably named "<span class="tooltip-text" title="Torch of Indonesia">*Suluh Indonesia*</span>". We can utilize this as one of our campaign media, effectively garnering support, especially among the middle class.</div>
+</div>!}
 
 @newspapers
 view-if: newspaper = 1
