@@ -14,7 +14,7 @@ if (Q.economic_growth) {
 }
 !}
 on-display: {!
-data = data.concat([
+data = [
     {
         "id": "pki",
         "legend": "PKI",
@@ -63,7 +63,7 @@ data = data.concat([
         "name": "Masjumi",
         "seats": Math.round(Q.masyumi_r * Q.dprs_comp),
     },
-]);
+];
 if (window && d3) {
     var width = 500; 
     var height = 500;
