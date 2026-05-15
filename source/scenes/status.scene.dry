@@ -15,7 +15,7 @@ if (Q.economic_growth) {
 !}
 on-display: {!
 data = Q.parliament_diagram;
-if (d3 && window && Q.started) {
+if (d3 && d3.parliament && window && Q.started) {
     var data = Q.parliament_diagram;
     var screenWidth = document.getElementById('qualities').offsetWidth;
 
@@ -23,13 +23,17 @@ if (d3 && window && Q.started) {
     var heightRatio = screenWidth < 350 ? 0.5 : 0.6;
     var height = width * heightRatio;
 
-    document.getElementById("reichstag_status").style.height = height + "px";
+    var svgElement = document.getElementById("reichstag_status");
+    if (svgElement) {
+        svgElement.style.width = width + "px";
+        svgElement.style.height = height + "px";
+    }
 
     var reichstag_status = d3.parliament();
-    reichstag_status.width(width)
-    reichstag_status.height(height)
-    reichstag_status.innerRadiusCoef(0.4)
-    reichstag_status.enter.fromCenter(false).smallToBig(false)
+    reichstag_status.width(width);
+    reichstag_status.height(height);
+    reichstag_status.innerRadiusCoef(0.4);
+    reichstag_status.enter.fromCenter(false).smallToBig(false);
     reichstag_status.exit.toCenter(false).bigToSmall(false);
     d3.select("#reichstag_status").datum(data).call(reichstag_status);
 }
