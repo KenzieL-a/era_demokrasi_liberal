@@ -187,7 +187,7 @@ Economic growth: [+ economic_growth_2 +]%
 <img src="img/portraits/hatta.jpg" alt="Hatta" style="width: 45%;border: 5px solid var(--card-border-color);"> 
 </div> 
 
-<div>{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 = Cabinet
 
