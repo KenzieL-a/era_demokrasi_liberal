@@ -52,7 +52,7 @@ data = data.concat([
         "seats": Q.katolik_r * Q.dprs_comp,
     },
         {
-        "id": "psii"",
+        "id": "psii",
         "legend": "PSII",
         "name": "PSII",
         "seats": Q.psii_r * Q.dprs_comp,
