@@ -42,7 +42,7 @@ data = [
     {
         "id": "kristen",
         "legend": "Parkindo",
-        "name": "parkindo",
+        "name": "Parkindo",
         "seats": Math.round(Q.kristen_r * Q.dprs_comp),
     },
     {
@@ -51,13 +51,13 @@ data = [
         "name": "Katolik",
         "seats": Math.round(Q.katolik_r * Q.dprs_comp),
     },
-        {
+    {
         "id": "psii",
         "legend": "PSII",
         "name": "PSII",
         "seats": Math.round(Q.psii_r * Q.dprs_comp),
     },
-        {
+    {
         "id": "masyumi",
         "legend": "Masjumi",
         "name": "Masjumi",
