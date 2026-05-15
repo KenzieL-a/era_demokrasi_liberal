@@ -64,6 +64,7 @@ data = [
         "seats": Math.round(Q.masyumi_r * Q.dprs_comp),
     },
 ];
+
 if (window && d3) {
     var width = 500; 
     var height = 500;
