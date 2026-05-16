@@ -14,59 +14,7 @@ if (Q.economic_growth) {
 }
 !}
 on-display: {!
-data =  data.concat([
-    {
-        "id": "pki",
-        "legend": "PKI",
-        "name": "PKI",
-        "seats": Math.round(Q.pki_r * Q.dprs_size),
-    },
-    {
-        "id": "psi",
-        "legend": "PSI",
-        "name": "PSI",
-        "seats": Math.round(Q.psi_r * Q.dprs_size),
-    },
-    {
-        "id": "pni",
-        "legend": "PNI",
-        "name": "PNI",
-        "seats": Math.round(Q.pni_r * Q.dprs_size),
-    },
-    {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Math.round(Q.other_r * Q.dprs_size),
-    },
-    {
-        "id": "kristen",
-        "legend": "Parkindo",
-        "name": "Parkindo",
-        "seats": Math.round(Q.kristen_r * Q.dprs_size),
-    },
-    {
-        "id": "katolik",
-        "legend": "Katolik",
-        "name": "Katolik",
-        "seats": Math.round(Q.katolik_r * Q.dprs_size),
-    },
-    {
-        "id": "psii",
-        "legend": "PSII",
-        "name": "PSII",
-        "seats": Math.round(Q.psii_r * Q.dprs_size),
-    },
-    {
-        "id": "masyumi",
-        "legend": "Masjumi",
-        "name": "Masjumi",
-        "seats": Math.round(Q.masyumi_r * Q.dprs_size),
-    },
-]);
-
-Q.parliament_diagram = data
-
+data = Q.parliament_diagram;
 if (d3 && window && Q.started) {
     var data = Q.parliament_diagram;
     var screenWidth = document.getElementById('qualities').offsetWidth;
