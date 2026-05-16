@@ -181,7 +181,7 @@ Q.election_records.push(election_result);
 !}
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
-data = data.concat([
+const data = [
     {
         "id": "pki",
         "legend": "PKI",
@@ -230,7 +230,7 @@ data = data.concat([
         "name": "Masjumi",
         "seats": Math.round(Q.masyumi_r * Q.dprs_size),
     },
-]);
+];
 
 Q.parliament_diagram = data
 
