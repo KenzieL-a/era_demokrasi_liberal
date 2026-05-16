@@ -65,6 +65,8 @@ data =  data.concat([
     },
 ]);
 
+Q.parliament_diagram = data
+
 if (d3 && window && Q.started) {
     var data = Q.parliament_diagram;
     var screenWidth = document.getElementById('qualities').offsetWidth;
@@ -191,7 +193,7 @@ Economic growth: [+ economic_growth_2 +]%
 <img src="img/portraits/hatta.jpg" alt="Hatta" style="width: 45%;border: 5px solid var(--card-border-color);"> 
 </div> 
 
-{!<svg id="reichstag_st" style="width: 500px; height: 300px;"> </svg>!}
+{!<svg id="reichstag_st" style="width: 500px; height: 250px;"> </svg>!}
 
 = Cabinet
 
