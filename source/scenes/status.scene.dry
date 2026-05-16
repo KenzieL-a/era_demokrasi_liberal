@@ -65,23 +65,26 @@ data =  data.concat([
     },
 ]);
 
-if (window && d3) {
-    var width = 500; 
-    var height = 500;
-    var screenWidth = document.getElementById('content').offsetWidth;
-    if (screenWidth < width - 50) {
-        width = screenWidth - 50; 
-        height = width;
-        document.getElementById("reichstag_st").style.height = screenWidth/2 + "px";
-    } 
+if (d3 && window && Q.started) {
+    var data = Q.parliament_diagram;
+    var screenWidth = document.getElementById('qualities').offsetWidth;
 
-    var parliament = d3.parliament();
-    parliament.width(width).height(height).innerRadiusCoef(0.4);
-    parliament.enter.fromCenter(true).smallToBig(true);
-    parliament.exit.toCenter(false).bigToSmall(true);
-    d3.select("#reichstag_st").datum(data).call(parliament);
+    var width = Math.max(Math.min(screenWidth , 250), 120);
+    var heightRatio = screenWidth < 350 ? 0.5 : 0.6;
+    var height = width * heightRatio;
+
+    document.getElementById("reichstag_st").style.height = height + "px";
+
+    var reichstag_st = d3.parliament();
+    reichstag_st.width(width)
+    reichstag_st.height(height)
+    reichstag_st.innerRadiusCoef(0.4)
+    reichstag_st.enter.fromCenter(false).smallToBig(false)
+    reichstag_st.exit.toCenter(false).bigToSmall(false);
+    d3.select("#reichstag_st").datum(data).call(reichstag_st);
 }
 !}
+
 
 = <span style="color: #990000;">**PNI**</span> Leadership
 
