@@ -246,16 +246,16 @@ Q.christians_other = 15;
 
 
 // Current Reichstag composition
-Q.pni_r = 15.52;
+Q.pni_r = 15.5;
 Q.pki_r = 5.6;
-Q.masyumi_r = 19.83;
-Q.psi_r = 7.33;
-Q.psii_r = 2.16;
-Q.kristen_r = 3.02;
-Q.katolik_r = 3.88;
-Q.other_r = 42.67;
+Q.masyumi_r = 19.8;
+Q.psi_r = 7.3;
+Q.psii_r = 2.2;
+Q.kristen_r = 3.0;
+Q.katolik_r = 3.9;
+Q.other_r = 42.7;
 
-Q.dprs_comp = 2.32;
+Q.dprs_size = 2.32;
 
 // diff from prev
 Q.old_pni_r = 26;
